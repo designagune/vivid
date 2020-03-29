@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+session_start();
 require_once ("MYDB.php");
 $pdo= db_connect();
 ?>
@@ -8,9 +9,12 @@ $pdo= db_connect();
     <head>
         <meta charset="UTF-8">
         <title>회원관리</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     </head>
     <body>
         <?php
+        if($_SESSION["userid"]=="set555")
+        {
             try
             {
             $sql="select * from member1";
@@ -73,7 +77,13 @@ $pdo= db_connect();
             
             } ?>
             </table>
-        
-        
+        <?php
+        }else{ 
+        ?>
+                <script>
+                    alert("정상적인 접근이 아닙니다.");
+                    history.back();
+                </script>
+            <?php } ?>
     </body>
 </html>

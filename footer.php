@@ -1,7 +1,7 @@
 <footer>
 				<div id="footer_in" class="insize row">
 					<div class="grid12">
-						<ul>
+						<ul class="row">
 							<li class="grid4">
 								<h3>
 									CENTER
@@ -14,6 +14,9 @@
 								</p>
 								<p>
 									SAT, SUN, HOLIDAY CLOSE
+								</p>
+								<p>
+									<a href="#">ehdrjs4046@gmail.com<a>
 								</p>
 							</li>
 							<li class="grid4">
@@ -28,43 +31,16 @@
 							</li>
 							<li class="grid4">
 								<h3>
-									ADDRESS
+									QR CODE
 								</h3>
 								<p>
-								충청북도 청주시 서원구 무심서로 377-3</br>
-								서원대학교 자연관 312호
+									<a href="http://m.site.naver.com/0u32V" target="_blank"><img src="https://qrcodethumb-phinf.pstatic.net/20191019_6/1571494158700pXvQS_PNG/0u32V.png"/></a>
+
 								</p>
 							</li>
 						</ul>
 					</div>
-					<div class="grid12">
-						<ul>
-							<li  class="grid6">
-								<h3>
-									INQUITY
-								</h3>
-								<p>
-									<a href="#">ehdrjs4046@gmail.com<a>
-								</p>
-								<p>
-									<a href="#">고객문의</a>
-								</p>
-								<p>
-									<a href="#">광고문의</a>
-								</p>
-							</li>
-							<li class="grid6">
-								<h3>
-									CLAUSE
-								</h3>
-								<p>
-									<a href="#">
-										개인정보처리방침
-									</a>
-								</p>
-							</li>
-						</ul>
-					</div>
+					
 
 					<div class="grid12">
 						<ul>
@@ -73,8 +49,9 @@
 									COMPANY : VIVID
 								</span>
 								<span>
-									OWNER : 건아
+									OWNER : 채동건
 								</span>
+								<br/>
 								<span>
 									TEL : 010 - 9435 - 6684
 								</span>
@@ -83,9 +60,13 @@
 								<span>
 									BUSINESS NUMBER : 311 - 84 - 742XXX
 								</span>
+								<br/>
 								<span>
-									ONLINE BUISNESS LICENSE : 제 2019 - 경기수원 - 00XX호
+									ONLINE BUISNESS LICENSE :<br/> 제 2019 - 경기수원 - 00XX호
 								</span>
+							</li>
+							<li>
+								<span>주소 : 충청북도 청주시 서원구 무심서로 377-3 서원대학교 자연관 312호</span>
 								<span>
 									개인정보 보호책임자 : 채동건
 								</span>
