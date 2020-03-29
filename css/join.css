@@ -1,3 +1,14 @@
+br{display:none;}
+
+#post input[type="button"]+br
+{
+	display: block;
+}
+#post #sample4_jibunAddress+br
+{
+	display: block;
+}
+
 section>center
 {
 	color:#666;
@@ -60,12 +71,12 @@ th,td
 		color:white;
 		margin-top:10px;
 	}
-		input[type="button"]:hover
+		/*input[type="button"]:hover
 		{
 			background:transparent;
 			transition:all 0.5s;
 			color:black;
-		}
+		}*/
 	
 
 	input[type="reset"],input[type="submit"]
@@ -89,3 +100,167 @@ th,td
 			transition:all 0.5s;
 			color:black;
 		}
+	tr:last-child td
+	{
+		text-align: center;
+	}
+
+@media screen and (max-width:414px)
+{
+	table
+	{
+		width:600px;
+	}
+	br
+	{
+		display: block;
+	}
+	section>center
+	{
+		padding:50px 0;
+		margin:0;
+	}
+	tr:nth-last-child(3) td
+	{
+		padding:10px 0;
+	}
+	tr:last-child td
+	{
+		text-align: left;
+	}
+}
+@media screen and (max-width:414px) and (min-width:376px)
+{
+	tr:nth-child(2) td input[type="text"]
+	{
+		width:30%;
+	}
+
+	#post input:first-child
+	{
+		width:30%;
+	}
+	#post input:nth-child(4),#post input:nth-child(6),#post input:nth-child(8)
+	{
+		width:50%;
+	}
+
+	#center_complite
+	{
+		margin-left:130px;
+	}
+
+}
+
+@media screen and (max-width:375px) and (min-width:361px)
+{
+	tr:nth-child(2) td input[type="text"]
+	{
+		width:25%;
+	}
+
+	#post input:first-child
+	{
+		width:25%;
+	}
+	#post input:nth-child(4),#post input:nth-child(6),#post input:nth-child(8)
+	{
+		width:45%;
+	}
+	tr:nth-last-child(6) input
+	{
+		width:20%;
+	}
+	tr:nth-last-child(3) input
+	{
+		width:12%;
+	}
+
+	#center_complite
+	{
+		margin-left:115px;
+	}
+}
+@media screen and (max-width:360px) and (min-width:321px)
+{
+	tr:nth-child(2) td input[type="text"]
+	{
+		width:20%;
+	}
+
+	#post input:first-child
+	{
+		width:20%;
+	}
+	#post input:nth-child(4),#post input:nth-child(6),#post input:nth-child(8)
+	{
+		width:45%;
+	}
+	tr:nth-last-child(6) input
+	{
+		width:17%;
+	}
+	tr:nth-last-child(3) input
+	{
+		width:10%;
+	}
+	tr:nth-last-child(2) input
+	{
+		width:15%;
+	}
+
+	#center_complite
+	{
+		margin-left:105px;
+	}
+}
+
+@media screen and (max-width:320px)
+{
+	
+
+	th {width:100px;}
+
+	tr:nth-child(2) td input[type="text"]
+	{
+		width:22%;
+	}
+	tr:nth-child(2) td input[type="button"]
+	{
+		width:14%;
+	}
+	#post input:first-child
+	{
+		width:18%;
+	}
+	#post input:nth-child(4),#post input:nth-child(6),#post input:nth-child(8)
+	{
+		width:38%;
+	}
+
+	tr:nth-child(6) input
+	{
+		width:15%;
+	}
+	tr:nth-child(6) select
+	{
+		width:15%;
+	}
+
+	tr:nth-last-child(2) input
+	{
+		width:13%;
+	}
+
+	tr:nth-last-child(3) input,tr:nth-last-child(3) select
+	{
+		width:10%;
+	}
+	
+	#center_complite
+	{
+		margin-left:85px;
+	}
+
+	
+}

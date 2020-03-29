@@ -6,5 +6,5 @@ unset($_SESSION["name"]);
 ?>
 <script>
 		window.alert("로그아웃 하셨습니다!");
-		location.href="../index.php";
+		history.back();	
 </script>

@@ -6,6 +6,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" id="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" href="../css/grid1.css?ver=3">
 		<link rel="stylesheet" type="text/css" href="../css/join.css">
@@ -13,6 +14,9 @@
 		<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 		<script src="../js/join.js"></script>
 		<script src="../js/join_check.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!--GNB-->
+		<script src="../js/mob_menu.js"></script>
 		<script>
 			function isSame() //비밀번호와 비밀번호확인칸 동일 식별메소드
             {
@@ -95,7 +99,7 @@
 									<th>아이디 <img src="../images/join_point.png"/></th>
 									<td>
 										<input type="text" class="txt" name="userid" required>&nbsp
-										<input type="button" value="아이디 중복확인" onclick="check_id()" id="id_check"/>
+										<input type="button" value="중복확인" onclick="check_id()" id="id_check"/>
 									</td>
 								</tr>
 								<tr>
@@ -105,7 +109,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th>비밀번호 확인 <img src="../images/join_point.png"/></th>
+									<th>비밀번호<br/> 확인 <img src="../images/join_point.png"/></th>
 									<td>
 										<input class="txt"type="password"id="pwCheck"name="pwd2" onchange="isSame()" required />&nbsp;&nbsp;<span id='same'></span>
 									</td>
@@ -114,10 +118,13 @@
 									<th>주소 <img src="../images/join_point.png"/></th>
 									<td>
 										<input class="txt"type="text" name="sample4_postcode" id="sample4_postcode" placeholder="우편번호"required readonly>
-										<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" id="post_btn"><br>
+										<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" id="post_btn">
+										<br/>
 										<input class="txt"type="text" name="sample4_roadAddress" id="sample4_roadAddress" placeholder="도로명주소" size="40" readonly>
+										<br/>
 										<input class="txt"type="text" name="sample4_jibunAddress" id="sample4_jibunAddress" placeholder="지번주소" size="40"readonly>
-										</br><input class="txt"type="text" name="detailAddress" placeholder="상세주소 (직접입력)"size="40">
+										<br/>
+										<input class="txt"type="text" name="detailAddress" placeholder="상세주소 (직접입력)"size="40">
 									</td>
 								</tr>
 								<tr>
@@ -206,10 +213,9 @@
 								</tr>
 								<tr>
 									<td colspan="2">
-									<center>
-											<input type="submit" value="회원가입" onclick="checked_input()" id="center_complite"/>
-											<input type="reset" value="재작성" id="reset" onlick="reset_form()">
-									</center>
+										<input type="submit" value="회원가입" onclick="checked_input()" id="center_complite"/>
+										<input type="reset" value="재작성" id="reset" onlick="reset_form()">
+									</td>
 								</tr>
 							</tbody>
 						</table>

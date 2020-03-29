@@ -5,7 +5,7 @@
 
 #content {
 	width:100%;
-	max-width:1200px;
+	max-width:1230px;
 	margin:0 auto;
 	/*background:url("../image/main_bg.jpg");*/
 }
@@ -30,8 +30,8 @@
 
 .row [class*=grid] {
 	float:left;
-	/*margin-left:2%;*/
-	/*height:150px;*/
+	/*margin-left:2%;
+	height:150px;*/
 }
 
 .grid1 {
