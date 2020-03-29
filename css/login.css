@@ -1,0 +1,80 @@
+section
+{
+	height: 800px;
+	margin:0 auto;
+}
+
+	form>.content
+	{
+		margin:0 auto;
+		height: 500px;
+		position:absolute;
+		top:43%;
+		left:33%;
+		z-index: 888;
+
+	}
+		form>.content>.grid7
+		{
+			margin:0 auto;
+			text-align: center;
+		}
+	form>.content .login_input
+	{
+
+		width:93%;
+		font-size:1.3em;
+		margin:1%;
+		padding:2%;
+		border:1px solid black;
+		border-radius: 5px;
+
+
+	}
+	form>.content #login input
+	{
+
+		background: transparent;
+		width:97%;
+		height:80px;
+		font-size:1.3em;
+		font-weight:900;
+		cursor:pointer;
+		border-radius:3px;
+		border-color:transparent;
+		transition:all 0.5s;
+		background:black;
+		border:2px solid black;
+		color:white;
+		margin-top:10px;
+	}
+		form>.content #login input:hover
+		{
+			background:transparent;
+			transition:all 0.5s;
+			color:black;
+		}
+
+	#sub
+	{
+		margin-top:20px;
+	}
+		#sub span
+		{
+			font-size:0.9em;
+			font-weight: bold;
+		}
+			#sub span:nth-child(2)
+			{
+				margin:0 5%;
+			}
+
+
+#caps-lock-warn  /*  caps_lock text부분  */
+{
+    font-weight: bold;
+    font-size:1.3em;
+    color:red;
+    display:none;
+    margin:10px 0;
+}

@@ -1,0 +1,154 @@
+/* common */
+* {margin:0; padding:0; border:none;}
+body {width:100%; height:100%;}
+img {max-width:100%;}
+li {list-style: none;}
+p,h1,h2,h3,span{user-select: none;}
+
+/*nav*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Roboto+Condensed:400,700');
+body
+{
+	color:#333;
+	margin:0;
+	padding:0;
+	padding-top:150px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+a
+{
+	color:inherit;text-decoration:none;
+}
+nav
+{
+	width:100%;
+	position:fixed;
+	top:0;left:0;
+	border-bottom:2px double #DDD;
+	background: #FFF;
+	z-index:999;
+}
+	nav>#nav_in
+	{
+		max-width:1230px;
+		height:150px;
+		background:#FFF;
+		margin:0 auto;
+		overflow:hidden;
+		text-align: center;
+		position: relative;
+	}
+		nav>#nav_in>.menu
+		{
+			height:inherit;
+			float:left;
+		}
+			nav>#nav_in>.grid2>a img
+			{
+				width: 100%;
+				vertical-align:middle;
+				opacity:0.7;
+				transition:opacity 0.3s;
+			}
+				nav>#nav_in>.grid2>a img:hover
+				{
+					opacity:1;
+					transition:opacity 0.3s;
+				}
+			#logo img
+			{
+				margin-top:2%;
+				opacity:1;
+
+			}
+		nav #login
+		{
+			position:absolute;
+			top:10px;
+			left:20%;	
+		}
+			nav #login a
+			{
+				font-size:1.3em;
+				font-weight:bold;
+				padding:0 10px;
+				border:3px solid #333;
+				background:#FFF;
+				border-radius:7px;
+				transition:0.3s all;
+			}
+				nav #login a:hover
+				{
+					border:3px solid black;
+					border-radius:7px;
+					background: #333;
+					color:#FFF;
+					transition:0.3s all;
+				}
+
+			nav #login span
+			{
+				color:#AAA;
+				font-size:0.9em;
+				font-weight: bold;
+				cursor: default;
+			}
+
+footer
+{
+	margin:3% 0;
+	padding-bottom:5%;
+	border-top:1px solid #CFCFCF;
+	max-height:1200px;
+}
+#footer_in .grid12
+{
+	margin-top:30px;
+	padding-top:30px;
+	border-top:1px solid #DFDFDF;
+}
+	#footer_in>div:first-child
+	{
+		border:0;
+	}
+
+#footer_in ul
+{
+	overflow: hidden;
+}
+	#footer_in li
+	{
+		float:left;
+		text-align:center;
+		margin:10px 0;
+	}
+		#footer_in li p,#footer_in li span
+		{
+			font-size:14px;
+		}
+		#footer_in li span:first-child
+		{
+			margin-left:0%;
+		}
+			#footer_in li span
+			{
+				margin-left:3%;
+			}
+
+			#footer_in li p img
+			{
+				width:27%;
+			}
+
+		#footer_in li h3
+		{
+			margin-bottom:10px;
+		}
+
+		#footer_in>div:last-child li
+		{
+			float:none;
+			color:#888;
+			font-weight: bold;
+		}

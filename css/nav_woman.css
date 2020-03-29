@@ -1,0 +1,145 @@
+section
+{
+	margin:0 auto;
+	
+}
+	section h1
+	{
+		color:#666;
+		font-size:1.9em;
+		margin:5% 0;
+	}
+
+	section #contain
+	{
+		border-top:1px solid #999;
+		padding-top:30px;
+	}
+
+	section .grid9
+	{
+		margin:0 auto;
+	}
+
+	section .grid9>.row:first-child
+	{
+		padding-bottom:20px;
+		border-bottom:1px solid #EFEFEF;
+	}
+
+	section .grid9 .grid3
+	{
+		overflow:hidden;
+		max-height:310px;
+		margin-left:4%;
+		border-radius:10px;
+	}
+		section .grid9 .grid3 img
+		{
+		    transition-duration: 0.3s;
+		    width:100%;
+		}
+			section .grid9 .grid3 img:hover
+			{
+			    transform: scale(1.1); transition-duration: 0.3s;
+			}
+
+
+	section .grid9 .grid8
+	{
+
+	}
+
+	section .grid9 .grid8 h3
+	{
+		font-weight:1000;
+	    font-size:2em;
+	    text-align:center;
+	    margin-bottom:7%;
+	}
+
+	section .grid9 .grid8 p
+	{
+		margin:5% 0 0 12%;
+    	font-weight:700;
+	}
+
+	section #contain .grid9 .reply_writer
+	{
+		width:50%;
+		margin:0 auto;
+	}
+
+		section #contain .grid9 .reply_writer .reply_name
+		{
+			font-weight: bold;
+			margin:3% 0 3% 3%;
+		}
+
+		section #contain .grid9 .reply_writer .reply1
+		{
+			margin:3% 0 3% 3%;
+		}
+			section #contain .grid9 .reply_writer .reply1 textarea
+			{
+				resize:none;
+				border:1px solid #999;
+				border-radius:10px;
+				padding:10px;
+			}
+
+		section #contain .grid9 .reply_writer .reply2
+		{
+			margin:3% 0 3% 3%;
+		}
+			section #contain .grid9 .reply_writer .reply2 input
+			{
+				background: transparent;
+				width:96.5%;
+				height:80px;
+				font-size:1.3em;
+				font-weight:900;
+				cursor:pointer;
+				border-radius:3px;
+				border-color:transparent;
+				transition:all 0.5s;
+				background:black;
+				border:2px solid black;
+				color:white;
+			}
+				section #contain .grid9 .reply_writer .reply2 input:hover
+				{
+					background:white;
+					transition:all 0.5s;
+					color:black;
+				}
+
+		section .reply_title
+		{
+			background: #DFDFDF;
+			width:47%;
+			margin:2% auto 0 auto;
+			padding-bottom:5px;
+			border:1px solid #999;
+			border-bottom:1px solid #CFCFCF;
+			border-top-left-radius:10px;
+			border-top-right-radius:10px;
+			text-align: center;
+			font-size:0.8em;
+		}
+		section .reply_content
+		{
+			text-align: center;
+			background: #FFF;
+			width:47%;
+			margin:0 auto 2% auto;
+			border:1px solid #999;
+			border-top:0;
+			border-radius: 10px;
+			border-top-left-radius:0;
+			border-top-right-radius:0;
+			padding:2% 0;
+			font-size:0.9em;
+			font-weight: bold;
+		}
+

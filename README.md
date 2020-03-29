@@ -1,0 +1,2 @@
+# vivid
+graduation project ! ...ing

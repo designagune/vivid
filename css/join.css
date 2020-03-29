@@ -1,0 +1,91 @@
+section>center
+{
+	color:#666;
+	font-weight:bold;
+	font-size:1.5em;
+	margin:3% 0;
+}
+
+table
+{
+	border-top:1px solid #DFDFDF;
+	border-collapse: collapse;
+}
+th,td
+{
+	border-bottom: 1px solid #DFDFDF;
+    padding: 10px;
+    font-size:0.8em;
+    color:#666;
+}
+	th img
+	{
+		margin-left:5px;
+	}
+	#post .txt
+	{
+		background:#BFBFBF;
+	}
+		#post .txt:last-child
+		{
+			background:#EFEFEF;
+		}
+.txt
+{
+	padding:5px;
+	background: #EFEFEF;
+	border:1px solid #999;
+	margin:1%;
+}
+	select
+	{
+		border:1px solid #BFBFBF;
+		border-radius: 5px;
+		padding:5px;
+		margin:0 5px;
+	}
+
+	input[type="button"]
+	{
+		background: transparent;
+		width:20%;
+		height:30px;
+		font-weight:900;
+		cursor:pointer;
+		border-radius:3px;
+		border-color:transparent;
+		transition:all 0.5s;
+		background:black;
+		border:2px solid black;
+		color:white;
+		margin-top:10px;
+	}
+		input[type="button"]:hover
+		{
+			background:transparent;
+			transition:all 0.5s;
+			color:black;
+		}
+	
+
+	input[type="reset"],input[type="submit"]
+	{
+		background: transparent;
+		width:10%;
+		height:60px;
+		font-weight:900;
+		cursor:pointer;
+		border-radius:3px;
+		border-color:transparent;
+		transition:all 0.5s;
+		background:#666;
+		border:2px solid #666;
+		color:white;
+		margin-top:10px;
+	}
+		input[type="reset"]:hover,input[type="submit"]:hover
+		{
+			background:transparent;
+			transition:all 0.5s;
+			color:black;
+		}
