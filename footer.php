@@ -73,7 +73,7 @@
 									COMPANY : VIVID
 								</span>
 								<span>
-									OWNER : 채동건
+									OWNER : 건이
 								</span>
 								<span>
 									TEL : 010 - 9435 - 6684
