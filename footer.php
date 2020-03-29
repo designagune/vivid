@@ -73,7 +73,7 @@
 									COMPANY : VIVID
 								</span>
 								<span>
-									OWNER : 건이
+									OWNER : 건아
 								</span>
 								<span>
 									TEL : 010 - 9435 - 6684
