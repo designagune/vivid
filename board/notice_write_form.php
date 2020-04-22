@@ -39,14 +39,14 @@ if(isset($_REQUEST["mode"]))  //수정 버튼을 클릭해서 호출했는지 �
  }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" id="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<link rel="stylesheet" href="../css/common.css">
-		<link rel="stylesheet" href="../css/notice_write.css">
-		<link rel="stylesheet" href="../css/grid1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/notice_write.css"/>
+		<link rel="stylesheet" href="../css/grid1.css"/>
 		<!--GNB-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="../js/mob_menu.js"></script>
@@ -57,6 +57,7 @@ if(isset($_REQUEST["mode"]))  //수정 버튼을 클릭해서 호출했는지 �
 			<!-- php로 header 부분 include -->
 			<?php include '../header.php'?>
 			<section>
+ 				<h2 class="blind">&nbsp;</h2>
 				<div id="content">
 					<div class="write_title">NOTICE</div>
 					<?php

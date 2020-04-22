@@ -16,7 +16,7 @@
 									SAT, SUN, HOLIDAY CLOSE
 								</p>
 								<p>
-									<a href="#">ehdrjs4046@gmail.com<a>
+									<a href="#">ehdrjs4046@gmail.com</a>
 								</p>
 							</li>
 							<li class="grid4">
@@ -24,9 +24,7 @@
 									KAKAO TALK
 								</h3>
 								<p>
-									<a href="http://pf.kakao.com/_xexjPYj" target="_blank">
-										<img src="../images/kakao.jpg" alt="카카오톡문의">
-									</a>
+									<a href="http://pf.kakao.com/_xexjPYj" target="_blank"><img src="../images/kakao.jpg" alt="카카오톡문의"></a>
 								</p>
 							</li>
 							<li class="grid4">
@@ -34,8 +32,7 @@
 									QR CODE
 								</h3>
 								<p>
-									<a href="http://m.site.naver.com/0u32V" target="_blank"><img src="https://qrcodethumb-phinf.pstatic.net/20191019_6/1571494158700pXvQS_PNG/0u32V.png"/></a>
-
+									<a href="http://m.site.naver.com/0u32V" target="_blank"><img src="https://qrcodethumb-phinf.pstatic.net/20191019_6/1571494158700pXvQS_PNG/0u32V.png" alt="qrcode"/></a>
 								</p>
 							</li>
 						</ul>

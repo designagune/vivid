@@ -1,292 +1,277 @@
-div.loginalert
-{
-	position:fixed;
-	top:15%;
-	right:0;
+div.loginalert {
+	position: fixed;
+	top: 15%;
+	right: 0;
 	text-align: center;
-	background:#222;
-	height:200px;
-	padding:2%;
-	color:white;
+	background: #222;
+	height: 200px;
+	padding: 2%;
+	color: white;
 	font-weight: bold;
 }
-	div.loginalert p
-	{
-		margin-top:30px;
-	}
 
-section
-{
-	margin:0 auto;
-}
-	section h1
-	{
-		color:#666;
-		font-size:1.9em;
-		margin:80px 0;
-	}
-
-	section #content
-	{
-		border-top:1px solid #999;
-		padding-top:30px;
-	}
-
-	section .grid12>.row>.row:first-child
-	{
-		border:none;
-	}
-
-	section .grid12>.row>.row
-	{
-		margin-top:20px;
-		padding-top:20px;
-		border-top:1px solid #EFEFEF;
-	}
-
-	section .grid12>.row>.row .del a
-	{
-		float:right;
-		background:#DB0000;
-		cursor: pointer;
-		font-size:0.9em;
-		color:#FFF;
-		font-weight: bold;
-		padding:10px 20px;
-	}
-
-	section .grid12 .grid3
-	{
-		overflow:hidden;
-		max-height:240px;
-		margin-left:4%;
-		border-radius:10px;
-		transition: 0.3s box-shadow;
-	}
-		section .grid12 .grid3 img
-		{
-		    transition-duration: 0.3s;
-		    width:100%;
-		}
-			section .grid12 .grid3:hover
-			{
-				box-shadow: 0px 0px 7px 3px #CFCFCF;
-				transition: 0.3s box-shadow;
-			}
-			section .grid12 .grid3:hover img
-			{
-			    transform: scale(1.05); transition-duration: 0.3s;
-
-			}
-
-
-	/*cont-writer*/
-	#cont_writer>form>div
-	{
-		margin:10px 0;
-	}
-	#cont_writer label
-	{
-		font-size:0.9em;
-		font-weight: bold;
-	}
-	#cont_writer #cont_img span
-	{
-		font-weight: bold;
-		font-size:0.8em;
-		color:#AFAFAF;
-	}
-
-		#cont_writer #cont_img span a
-		{
-			color:#DB0000;
-		}
-	#cont_writer input[type="text"]
-	{
-		border:1px solid #CFCFCF;
-		padding:5px;
-	}
-
-	#cont_writer #cont_text label
-	{
-		display: block;
-	}
-
-	#cont_writer #cont_text textarea
-	{
-		border:1px solid #CFCFCF;
-	}
-
-	#cont_writer #cont_btn button
-	{
-		background:#333;
-		cursor: pointer;
-		font-size:0.9em;
-		color:#FFF;
-		font-weight: bold;
-		padding:10px 20px;
-		border:2px solid #222;
-	}
-
-	section .grid12 .grid8 h3
-	{
-		font-weight:1000;
-	    font-size:2em;
-	    text-align:center;
-	    margin-bottom:7%;
-	}
-
-	section .grid12 .grid8 p
-	{
-		padding:5%;
-    	font-weight:700;
-	}
-
-
-	.ripple:before,.ripple:after
-	{
-		content: "";
-		display: block;
-		width:20%;
-		height:1px;
-		background:red;
-		position:relative;
-		left:0;
-		right:0;
-		margin:0 auto;
-
-	}
-	.ripple:before
-	{
-		top:-20px;
-	}
-
-	.ripple:after
-	{
-		top:20px;
-	}
-
-	.ripple
-	{
-		margin-top:20px;
-		padding:15px 0 25px 0;
-		text-align: center;
-	}
-	.ripple>.row
-	{
-		width:70%;
-		margin:0 auto;
-	}
-
-	.ripple .ripple1
-	{
-		font-weight: bold;
-	}
-
-	.ripple .ripple2 .ripple_title
-	{
-		font-size:0.9em;
-		font-weight: bold;
-	}
-
-	.ripple .ripple2 .ripple_title span
-	{
-		font-weight: bold;
-		font-size:2em;
-		line-height: 3px;
-		display:inline-block;
-		margin:0 5px 0;
-	}
-
-	.ripple .ripple2 .ripple_title .ripple_del a
-	{
-		color:#DB0000;
-	}
-
-	.ripple .ripple2 .ripple_content
-	{
-		font-size:0.9em;
-		line-height: 30px;
-		padding:5px;
-		margin:15px auto;
-		width:50%;
-		background-color: #FCFCFC;
-		border:2px solid #CFCFCF;
-		border-radius: 3px;
-	}
-	.ripple .ripple2 .ripple_textarea
-	{
-		margin:10px 0;
-	}
-
-	.ripple .ripple2 .ripple_textarea textarea
-	{
-		padding:10px;
-		border:1px solid #CFCFCF;
-		border-radius: 5px;
-	}
-
-	.ripple .ripple2 .ripple_button input
-	{
-		background:#333;
-		cursor: pointer;
-		font-size:1.1em;
-		color:#FFF;
-		font-weight: bold;
-		padding:10px 20px;
-		border:2px solid #222;
-
-	}
-
-@media screen and (max-width: 768px)
-{
-	section .grid12 .grid3{
-		border-radius:0;
-		margin:0;
-		max-height:400px;
-	}
-	img{border-radius:0;}
-	section .grid12 .grid3:hover img{transform:scale(1);}
+div.loginalert p {
+	margin-top: 30px;
 }
 
-@media screen and (max-width: 768px) and (min-width:768px)
-{
-	#cont_writer form #cont_img input
-	{
-		width:200px;
+section {
+	margin: 0 auto;
+}
+
+section h1 {
+	color: #666;
+	font-size: 1.9em;
+	margin: 80px 0;
+	text-align: center;
+}
+
+section #content {
+	border-top: 1px solid #999;
+	padding-top: 30px;
+}
+
+section .grid12>.row>.row:first-child {
+	border: none;
+}
+
+section .grid12>.row>.row {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #EFEFEF;
+}
+
+section .grid12>.row>.row .del a {
+	float: right;
+	background: #DB0000;
+	cursor: pointer;
+	font-size: 0.9em;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+section .grid12 .grid3 {
+	overflow: hidden;
+	max-height: 240px;
+	margin-left: 4%;
+	border-radius: 10px;
+	transition: 0.3s box-shadow;
+}
+
+section .grid12 .grid3 img {
+	transition-duration: 0.3s;
+	width: 100%;
+}
+
+section .grid12 .grid3:hover {
+	box-shadow: 0px 0px 7px 3px #CFCFCF;
+	transition: 0.3s box-shadow;
+}
+
+section .grid12 .grid3:hover img {
+	transform: scale(1.05);
+	transition-duration: 0.3s;
+
+}
+
+
+/*cont-writer*/
+#cont_writer>form>div {
+	margin: 10px 0;
+}
+
+#cont_writer label {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+#cont_writer #cont_img span {
+	font-weight: bold;
+	font-size: 0.8em;
+	color: #AFAFAF;
+}
+
+#cont_writer #cont_img span a {
+	color: #DB0000;
+}
+
+#cont_writer input[type="text"] {
+	border: 1px solid #CFCFCF;
+	padding: 5px;
+}
+
+#cont_writer #cont_text label {
+	display: block;
+}
+
+#cont_writer #cont_text textarea {
+	border: 1px solid #CFCFCF;
+}
+
+#cont_writer #cont_btn button {
+	background: #333;
+	cursor: pointer;
+	font-size: 0.9em;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: 2px solid #222;
+}
+
+section .grid12 .grid8 h3 {
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 7%;
+}
+
+section .grid12 .grid8 p {
+	padding: 5%;
+	font-weight: 700;
+}
+
+
+.ripple:before,
+.ripple:after {
+	content: "";
+	display: block;
+	width: 20%;
+	height: 1px;
+	background: red;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+}
+
+.ripple:before {
+	top: -20px;
+}
+
+.ripple:after {
+	top: 20px;
+}
+
+.ripple {
+	margin-top: 20px;
+	padding: 15px 0 25px 0;
+	text-align: center;
+}
+
+.ripple>.row {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.ripple .ripple1 {
+	font-weight: bold;
+}
+
+.ripple .ripple2 .ripple_title {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.ripple .ripple2 .ripple_title span {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 3px;
+	display: inline-block;
+	margin: 0 5px 0;
+}
+
+.ripple .ripple2 .ripple_title .ripple_del a {
+	color: #DB0000;
+}
+
+.ripple .ripple2 .ripple_content {
+	font-size: 0.9em;
+	line-height: 30px;
+	padding: 5px;
+	margin: 15px auto;
+	width: 50%;
+	background-color: #FCFCFC;
+	border: 2px solid #CFCFCF;
+	border-radius: 3px;
+}
+
+.ripple .ripple2 .ripple_textarea {
+	margin: 10px 0;
+}
+
+.ripple .ripple2 .ripple_textarea textarea {
+	padding: 10px;
+	border: 1px solid #CFCFCF;
+	border-radius: 5px;
+}
+
+.ripple .ripple2 .ripple_button input {
+	background: #333;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: #FFF;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: 2px solid #222;
+
+}
+
+@media screen and (max-width: 768px) {
+	section .grid12 .grid3 {
+		border-radius: 0;
+		margin: 0;
+		max-height: 400px;
+	}
+
+	img {
+		border-radius: 0;
+	}
+
+	section .grid12 .grid3:hover img {
+		transform: scale(1);
 	}
 }
 
-@media screen and (max-width: 767px)
-{
-	#cont_writer form{
-		display:none;
+@media screen and (max-width: 768px) and (min-width:768px) {
+	#cont_writer form #cont_img input {
+		width: 200px;
 	}
-	#cont_writer:after
-	{
-		margin-left:5%;
+}
+
+@media screen and (max-width: 767px) {
+	#cont_writer form {
+		display: none;
+	}
+
+	#cont_writer:after {
+		margin-left: 5%;
 		content: "모바일에서는 업로드가 불가능합니다.";
-		font-size:0.9em;
+		font-size: 0.9em;
 		font-weight: bold;
 	}
 }
 
-@media screen and (max-width: 414px)
-{
-	.ripple .ripple2 .ripple_content{width:inherit;}
+@media screen and (max-width: 414px) {
+	.ripple .ripple2 .ripple_content {
+		width: inherit;
+	}
 }
 
-@media screen and (max-width: 414px) and (min-width:376px)
-{
-	.ripple .ripple2 .ripple_textarea textarea{width:280px;}
+@media screen and (max-width: 414px) and (min-width:376px) {
+	.ripple .ripple2 .ripple_textarea textarea {
+		width: 280px;
+	}
 }
 
-@media screen and (max-width: 375px) and (min-width:360px)
-{
-	.ripple .ripple2 .ripple_textarea textarea{width:250px;}
+@media screen and (max-width: 375px) and (min-width:360px) {
+	.ripple .ripple2 .ripple_textarea textarea {
+		width: 250px;
+	}
 }
 
-@media screen and (max-width: 359px)
-{
-	.ripple .ripple2 .ripple_textarea textarea{width:220px;}
+@media screen and (max-width: 359px) {
+	.ripple .ripple2 .ripple_textarea textarea {
+		width: 220px;
+	}
 }

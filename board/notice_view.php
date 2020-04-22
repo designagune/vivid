@@ -59,10 +59,10 @@
 	    }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" id="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="../css/common.css">
 		<link rel="stylesheet" href="../css/notice_view.css">
 		<link rel="stylesheet" href="../css/grid1.css">
@@ -86,6 +86,7 @@
 			<!-- php로 header 부분 include -->
 			<?php include '../header.php'?>
 			<section>
+				<h2 class="blind">&nbsp;</h2>
 				<div id="content">
 					<div class="row">
 	        			<div id="view_title" class="grid12">

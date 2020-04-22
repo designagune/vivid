@@ -2,30 +2,24 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" id="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<!--kakao thumnail -->
-		<meta property="og:type" content="website">
-		<meta property="og:title" content=":: VIVID ::">
-		<meta property="og:url" content="http://astragun.com/">
-		<meta property="og:description" content="쇼핑몰 광고사이트 VIVID">
-		<meta property="og:image" content="/images/vivid_카톡플러스title.jpg">
-		<!--style-->
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content=":: VIVID ::"/>
+		<meta property="og:url" content="http://astragun.com/"/>
+		<meta property="og:description" content="쇼핑몰 광고사이트 VIVID"/>
+		<meta property="og:image" content="/images/vivid_카톡플러스title.jpg"/>
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/grid1.css">
 		<link rel="stylesheet" href="css/index.css">
-		<!--슬라이드 부분-->
 		<script src="js/rank.js"></script>
-		<!--google API-->
 		
-		<meta name="google-signin-client_id" content="883555849817-vouhj5t96qrvshob3bb5cgj48ib5gfcg.apps.googleusercontent.com">
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 
-		<!--swiper-->
 		<link rel="stylesheet" href="./css/swiper.min.css">
 		<script src="./js/swiper.min.js"></script>
 		<script>
@@ -55,7 +49,7 @@ session_start();
 		        disableOnInteraction: false,
 		      },
 		    });
-			})
+			});
 		    
 	  	</script>
 		<!--GNB-->
@@ -70,6 +64,7 @@ session_start();
 			<div class="content">
 				<!--Title Image -->
 				<section id="sec1">
+					<h2 class="blind">&nbsp;</h2>
 					<div id="cont1" class="insize row">
 						<!-- <img src="images/title.jpg"alt="title"> -->
 					</div>
@@ -120,7 +115,7 @@ session_start();
 									</div>
 								</div>
 
-								<div class="grid1">&nbsp</div><!--여백-->
+								<div class="grid1">&nbsp;</div><!--여백-->
 								<div class="grid4">
 									<div class="cont_text">
 										<p>RANK</p>
@@ -198,7 +193,7 @@ session_start();
 										<p>VIVID Mall AD OPEN 기념 10% SALE<br/></p>
 									</div>
 								</div>
-								<div class="grid1">&nbsp</div><!--여백-->
+								<div class="grid1">&nbsp;</div>
 								<!--인기 쇼핑몰 박스-->
 								<div class="grid7">
 									<div class="cont_text">
@@ -206,7 +201,7 @@ session_start();
 										<h1>트렌드 패션</h1>
 									</div>
 									<div class="cont_image">
-									    <img src="images/blackhan.jpg" />
+									    <img src="images/blackhan.jpg" alt="blackhan" />
 									    <div class="blacktext">
 									    	<h2>원 컬러 스타일링</h2>
 									    	<p>배우 한예슬의 올 블랙 패션은 화려한 컬러 앞에서 굴복하기는커녕 오히려 더욱 큰 아우라를 내뿜는다.
@@ -238,11 +233,11 @@ session_start();
 								</div>
 								<div class="cont_image">
 									<a href="http://www.i-magazine.tv" target="_blank">
-										<img src="images/cont_img3.jpg"alt="해외패션매거진"/>
+										<img src="images/cont_img3.jpg" alt="해외패션매거진"/>
 									</a>
 								</div>
 							</div>
-							<div class="grid1">&nbsp</div>
+							<div class="grid1">&nbsp;</div>
 							<div class="grid4">
 								<div class="cont_text">
 									<p>INQUITY</p>

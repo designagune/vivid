@@ -3,14 +3,14 @@ session_start();
 error_reporting(E_ALL ^ E_NOTICE);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" id="viewport" content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<link rel="stylesheet" href="../css/common.css">
-		<link rel="stylesheet" href="../css/freeboard.css">
-		<link rel="stylesheet" href="../css/grid1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/freeboard.css"/>
+		<link rel="stylesheet" href="../css/grid1.css"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!--GNB-->
 		<script src="../js/mob_menu.js"></script>
@@ -65,9 +65,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 				<div id="content">
 					<div class="row" id="col2">
       					<div class="grid12" id="title">
-      						<center>
       							<h1>NOTICE</h1>
-      						</center>
       					</div>
       					<!--검색기능-->
       					<div class="grid12 search">
@@ -175,7 +173,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 							   }
 							  ?>
 							</div>
-
+					</div>
 				</div>
 			</section>
 			<!-- php로 footer 부분 include -->

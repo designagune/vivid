@@ -1,4 +1,4 @@
-<meta name="google-signin-client_id" content="883555849817-vouhj5t96qrvshob3bb5cgj48ib5gfcg.apps.googleusercontent.com">
+<meta content="883555849817-vouhj5t96qrvshob3bb5cgj48ib5gfcg.apps.googleusercontent.com"/>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script>
 		function signOut(){
@@ -28,7 +28,7 @@
 		<div id="nav_board" class="menu grid2">
 			<a href="../board/freeboard.php">NOTICE</a>						
 		</div>
-		<div id="login">
+		<div class="login">
 			<?php
                 if(!isset($_SESSION["userid"]))
                 {
@@ -69,7 +69,7 @@
 				<a href="../board/freeboard.php">NOTICE</a>
 			</li>
 		</ul>
-		<div id="login">
+		<div class="login">
 			<?php
                 if(!isset($_SESSION["userid"]))
                 {

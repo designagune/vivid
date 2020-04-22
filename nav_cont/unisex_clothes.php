@@ -17,15 +17,15 @@ $pdo = db_connect();
 
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="ko">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>:: VIVID :: UNISEX MALL</title>
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-        <link rel="stylesheet" href="../css/grid1.css" >
-        <link rel="stylesheet" href="../css/common.css?ver=8" >
-        <link rel="stylesheet" href="../css/nav_woman.css" >
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+        <link rel="stylesheet" href="../css/grid1.css" />
+        <link rel="stylesheet" href="../css/common.css?ver=8" />
+        <link rel="stylesheet" href="../css/nav_woman.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="../js/mob_menu.js"></script>
 
@@ -34,7 +34,7 @@ $pdo = db_connect();
         <div id="wrap">
                 <?php include "../header.php" ?>
                 <section>
-                    <center><h1>UNISEX MALL</h1></center>
+                    <h1>UNISEX MALL</h1>
                     <div id="content">
                         <div class="row">
                             <div class="grid12">
@@ -75,8 +75,8 @@ $pdo = db_connect();
                                             $cont_img_copied  = $row["img_copied_0"];
                                             $cont_num         = $row["num"];
                                             $cont_date        = $row["regist_day"];
-                                            $cont_cont        = str_replace("\n","</br>",$row["content"]);
-                                            $cont_cont        = str_replace(" ","&nbsp",$cont_cont);
+                                            $cont_cont        = str_replace("\n","<br/>",$row["content"]);
+                                            $cont_cont        = str_replace(" ","&nbsp;",$cont_cont);
                                         ?>
                                         <div class="row">
                                             <?php
@@ -89,12 +89,12 @@ $pdo = db_connect();
                                                 <a href="<?=$cont_href?>" target="_blank">
                                                     <?php 
 
-                                                           print "<img src='../images/$cont_img_copied' width='$image_width' alt='img'><br><br>";
+                                                           print "<img src='../images/$cont_img_copied' alt='img'><br/><br/>";
                                                     ?>
                                                 </a>
                                             </div>
                                             <div class="grid8">
-                                                <h3><a href="<?=$cont_href?>"target="_blank"><?= $cont_subj ?></a></h3>
+                                                <h3><a href="<?=$cont_href?>" target="_blank"><?= $cont_subj ?></a></h3>
                                                 <p><?= $cont_cont ?></p>
 
                                                 
@@ -115,7 +115,7 @@ $pdo = db_connect();
                                                             $ripple_num       = $row_ripple["num"];
                                                             $ripple_id        = $row_ripple["id"];
                                                             $ripple_name      = $row_ripple["name"];
-                                                            $ripple_content   = str_replace("\n","</br>",$row_ripple["content"]);
+                                                            $ripple_content   = str_replace("\n","<br/>",$row_ripple["content"]);
                                                             $ripple_content   = str_replace(" ", "&nbsp;", $ripple_content);
                                                             $ripple_date      = $row_ripple["regist_day"];
                                                         ?>
