@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* 2020.04.23 마지막수정 
+   수정자 : 채동건
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}

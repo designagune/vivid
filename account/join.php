@@ -7,8 +7,9 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/common.css"/>
-		<link rel="stylesheet" href="../css/grid1.css"/>
+		<link rel="stylesheet" href="../css/grid.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/join.css"/>
 		<title>:: VIVID :: JOIN</title>
 		<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>

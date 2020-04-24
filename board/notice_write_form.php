@@ -44,9 +44,10 @@ if(isset($_REQUEST["mode"]))  //수정 버튼을 클릭해서 호출했는지 �
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/common.css"/>
 		<link rel="stylesheet" href="../css/notice_write.css"/>
-		<link rel="stylesheet" href="../css/grid1.css"/>
+		<link rel="stylesheet" href="../css/grid.css"/>
 		<!--GNB-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="../js/mob_menu.js"></script>
@@ -58,7 +59,7 @@ if(isset($_REQUEST["mode"]))  //수정 버튼을 클릭해서 호출했는지 �
 			<?php include '../header.php'?>
 			<section>
  				<h2 class="blind">&nbsp;</h2>
-				<div id="content">
+				<div class="visual-content">
 					<div class="write_title">NOTICE</div>
 					<?php
     					if($mode=="modify"){

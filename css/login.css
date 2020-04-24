@@ -2,12 +2,12 @@ section {
 	height: 600px;
 }
 
-#content form {
+.visual-content form {
 	position: relative;
 	top: 175px;
 }
 
-#content .login {
+.visual-content .login {
 	width: 350px;
 	margin: 0 auto;
 	position: relative;
@@ -65,6 +65,7 @@ form #login_btn input {
 	font-weight: bold;
 	font-size: 0.9em;
 	user-select: none;
+	margin: 0 auto;
 }
 
 #login_btn>fieldset strong {
@@ -124,7 +125,7 @@ form #login_btn input {
 		width: 100%;
 	}
 
-	#content form {
+	.visual-content form {
 		top: 100px;
 	}
 

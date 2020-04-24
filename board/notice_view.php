@@ -63,14 +63,18 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="../css/common.css">
-		<link rel="stylesheet" href="../css/notice_view.css">
-		<link rel="stylesheet" href="../css/grid1.css">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!--GNB-->
-		<script src="../js/mob_menu.js"></script>
+
 		<title> :: VIVID :: NOTICE / 공지사항</title>
+
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/grid.css">
+		<link rel="stylesheet" href="../css/notice_view.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../js/mob_menu.js"></script>
+		
 		<script>
 			function del(href)
 			{
@@ -82,14 +86,13 @@
 		</script>
 	</head>
 	<body>
-		<div class="wrap"><!--추후 height수정-->
-			<!-- php로 header 부분 include -->
+		<div class="visual-content-wrap">
 			<?php include '../header.php'?>
 			<section>
 				<h2 class="blind">&nbsp;</h2>
-				<div id="content">
+				<div class="visual-content">
 					<div class="row">
-	        			<div id="view_title" class="grid12">
+	        			<div class="view-title" class="grid12">
 	        				<div class="row">
 				  				<div id="view_title1"class="grid12"><h1><?= $item_subject ?><h1></div>
 			          			<div id="view_title2"class="grid4">작성자 : <?= $item_name ?> | 조회 : <?= $item_hit ?> | 작성일 : <?= $item_date ?> </div>	

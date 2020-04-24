@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900');
 
-section {
+.visual-main-2 {
 	margin-top: 2%;
 }
 
-.cont_text {
+.visual-content {
+	max-width: 100%;
+}
+
+.visual-content-title {
 	text-transform: uppercase;
 }
 
 /*swiper*/
-#contPlus .cont_image {
+.shop-rank .visual-content-image {
 	position: relative;
 	height: 400px;
 }
@@ -49,8 +53,8 @@ section {
 /*swiper-end*/
 
 
-/*contPlus*/
-#contPlus .grid12>.row {
+/*shop-rank*/
+.shop-rank .grid12>.row {
 	height: 500px;
 }
 
@@ -176,32 +180,31 @@ section {
 	background: url(../images/icecream12.jpg);
 }
 
-/*contPlus-end*/
 
-#sec1 {
+.visual-main-1 {
 	max-height: 230px;
 	margin: 0;
 	background: #dfe2cd;
 }
 
-#sec1>#cont1 {
+.visual-main-1>.main-banner {
 	max-height: 230px;
 	height: 230px;
 	background: url("../images/title.jpg") no-repeat center center;
 }
 
-#sec1>#cont1>img {
+.visual-main-1>.main-banner>img {
 	width: 100%
 }
 
 
-#sec2>#cont2>.grid12 {
+.visual-main-2>.shop-rank>.grid12 {
 	width: 99.87%;
 	height: 480px;
 	margin: 0 auto;
 }
 
-#cont2 .grid7 .cont_image .blacktext {
+.visual-subtitle-1 .grid7 .visual-content-image .blacktext {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -215,29 +218,29 @@ section {
 	transition: ease-in-out 0.3s;
 }
 
-#cont2 .grid7 .cont_image {
+.visual-subtitle-1 .grid7 .visual-content-image {
 	overflow: hidden;
 	max-height: 377px;
 }
 
-#cont2 .grid7 .cont_image img {
+.visual-subtitle-1 .grid7 .visual-content-image img {
 	transition: ease-in-out 0.3s;
 	width: 100%;
 }
 
-#cont2 .grid7 .cont_image:hover img {
+.visual-subtitle-1 .grid7 .visual-content-image:hover img {
 	transform: scale(1.05);
 	transition: ease-in-out 0.3s;
 	filter: grayscale(1);
 }
 
-#cont2 .grid7 .cont_image:hover .blacktext {
+.visual-subtitle-1 .grid7 .visual-content-image:hover .blacktext {
 	transition: ease-in-out 0.3s;
 	transform: translateX(0%);
 }
 
-#cont2 .grid7 .cont_image .blacktext>h2,
-#cont2 .grid7 .cont_image .blacktext>p {
+.visual-subtitle-1 .grid7 .visual-content-image .blacktext>h2,
+.visual-subtitle-1 .grid7 .visual-content-image .blacktext>p {
 	display: block;
 	position: static;
 }
@@ -257,14 +260,14 @@ section {
 
 
 
-#sec2 p {
+.visual-main-2 p {
 	font-weight: bold;
 	color: #777;
 	cursor: default;
 	user-select: none;
 }
 
-#sec2 h1 {
+.visual-main-2 h1 {
 	font-size: 1.8em;
 	margin-bottom: 10px;
 	cursor: default;
@@ -272,33 +275,33 @@ section {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
-#sec2>#cont3>.grid12 {
+.visual-main-2>.visual-subtitle-2>.grid12 {
 	width: 99.87%;
 	height: 380px;
 	margin: 0 auto;
 }
 
-#sec2>#cont3 img {
+.visual-main-2>.visual-subtitle-2 img {
 	box-shadow: 3px 3px 10px #BFBFBF;
 }
 
-#sec2 .grid12 .cont_image {
+.visual-main-2 .grid12 .visual-content-image {
 	position: relative;
 }
 
-#sec2 .grid12 .cont_image p,
-#sec2 .grid12 .cont_image h2 {
+.visual-main-2 .grid12 .visual-content-image p,
+.visual-main-2 .grid12 .visual-content-image h2 {
 	position: absolute;
 	top: 0;
 	display: none;
 }
 
-#sec2 .grid12 .cont_image p {
+.visual-main-2 .grid12 .visual-content-image p {
 	top: 50px;
 	right: 5%;
 }
 
-#sec2 .grid12 .cont_image h2 {
+.visual-main-2 .grid12 .visual-content-image h2 {
 	right: 10%;
 }
 
@@ -313,7 +316,7 @@ section {
 }
 
 @media screen and (max-width: 799px) {
-	#contPlus .grid12>.row {
+	.shop-rank .grid12>.row {
 		height: inherit;
 	}
 
@@ -327,8 +330,8 @@ section {
 		padding-top: 15%;
 	}
 
-	#sec2>#cont2>.grid12,
-	#sec2>#cont3>.grid12 {
+	.visual-main-2>.visual-subtitle-1>.grid12,
+	.visual-main-2>.visual-subtitle-2>.grid12 {
 		height: auto;
 	}
 
@@ -354,20 +357,20 @@ section {
 
 @media screen and (max-width: 768px) and (min-width:768px) {
 
-	#sec2 .grid12 .cont_image p,
-	#sec2 .grid12 .cont_image h2 {
+	.visual-main-2 .grid12 .visual-content-image p,
+	.visual-main-2 .grid12 .visual-content-image h2 {
 		display: block;
 	}
 }
 
 @media screen and (max-width: 414px) {
 
-	#sec2>#cont2>.grid12,
-	#sec2>#cont3>.grid12 {
+	.visual-main-2>.visual-subtitle-1>.grid12,
+	.visual-main-2>.visual-subtitle-2>.grid12 {
 		height: auto;
 	}
 
-	#sec1>#cont1 {
+	.visual-main-1>.main-banner {
 		max-height: none;
 		height: 150px;
 		background-size: cover;

@@ -1,2 +1,3 @@
 # vivid
-graduation project ! ...ing
+
+본 프로젝트의 속한 이미지 저작권은 각 쇼핑몰에 있음을 밝힙니다.

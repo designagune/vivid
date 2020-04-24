@@ -21,20 +21,24 @@ $pdo = db_connect();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
         <title>:: VIVID :: WOMAN MALL</title>
+
+        <link rel="stylesheet" href="../css/reset.css" />
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
-        <link rel="stylesheet" href="../css/grid1.css" />
+        <link rel="stylesheet" href="../css/grid.css" />
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/nav_woman.css" />
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="../js/mob_menu.js"></script>
     </head>
     <body>
-        <div id="wrap">
+        <div class="visual-content-wrap">
                 <?php include "../header.php" ?>
-                <section>
+                <section class="visual-section">
                     <h1>WOMAN MALL</h1>
-                    <div id="content">
+                    <div class="visual-content">
                         <div class="row">
                             <div class="grid12">
                                 <div class="row">
@@ -42,26 +46,26 @@ $pdo = db_connect();
                                     if($_SESSION["userid"]=="set555")
                                     {
                                     ?>
-                                        <div id="cont_writer">
+                                        <div class="visual-contents-writer">
                                             <form name="cont_from" method="post" action="woman_insert.php"enctype="multipart/form-data">
-                                                <div id="cont_img">
+                                                <div class="contents-image">
                                                     <label>이미지 첨부</label>
                                                     <input type="file" name="upfile">
                                                     <span>이미지크기의 세로길이를 가로길이의 82%로 맞춰주세요. <a href="https://search.naver.com/search.naver?ie=UTF-8&sm=whl_hty&query=%EB%B9%84%EC%9C%A8%EA%B3%84%EC%82%B0%EA%B8%B0" target="_blank">[ 비율계산링크 ]</a></span>
                                                 </div>
-                                                <div id="cont_subject">
+                                                <div class="contents-subject">
                                                     <label>쇼핑몰 이름</label>
                                                     <input type="text" name="subject"/>
                                                 </div>
-                                                <div id="cont_href">
+                                                <div class="contents-href">
                                                     <label>쇼핑몰 링크</label>
                                                     <input type="text" name="href">
                                                 </div>
-                                                <div id="cont_text">
+                                                <div class="contents-text">
                                                     <label>쇼핑몰 소개 및 정보</label>
                                                     <textarea rows="6" cols="80" name="content" required></textarea>
                                                 </div>
-                                                <div id="cont_btn"><button>작성</button></div>
+                                                <div class="contents-btn"><button>작성</button></div>
                                             </form>
                                         </div>
                                     <?php
@@ -81,7 +85,7 @@ $pdo = db_connect();
                                             <?php
                                             if($_SESSION["userid"]=="set555")
                                             {?>
-                                            <div class="del"><a href="woman_delete.php?num=<?=$cont_num?>">삭제</a></div>
+                                            <div class="contents-delete"><a href="woman_delete.php?num=<?=$cont_num?>">삭제</a></div>
                                             <?php }
                                             ?>
                                             <div class="grid3">
@@ -100,8 +104,8 @@ $pdo = db_connect();
                                             </div>
                                             <div class="ripple grid12">
                                                 <div class="row">
-                                                    <div class="ripple1">댓글</div>
-                                                    <div class="ripple2">
+                                                    <div class="ripple-contents-1">댓글</div>
+                                                    <div class="ripple-contents-2">
                                                         <?php 
                                                         try{
                                                             $sql = "select * from set555.woman_ripple where parent='$cont_num'";
@@ -118,10 +122,10 @@ $pdo = db_connect();
                                                             $ripple_content   = str_replace(" ", "&nbsp;", $ripple_content);
                                                             $ripple_date      = $row_ripple["regist_day"];
                                                         ?>
-                                                        <div class="ripple_title">
+                                                        <div class="ripple-title">
                                                             <ul>
                                                                 <li><?= $ripple_name?>&nbsp;<span>·</span>&nbsp; <?= $ripple_date ?></li>
-                                                                <li class="ripple_del">
+                                                                <li class="ripple-delete">
                                                                     <?php
                                                                     if(isset($_SESSION["userid"])){
                                                                         if($_SESSION["userid"]=="set555" || $_SESSION["userid"]==$ripple_id)
@@ -131,16 +135,16 @@ $pdo = db_connect();
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="ripple_content"><?=$ripple_content?></div>
+                                                        <div class="ripple-comment"><?=$ripple_content?></div>
                                                     <?php }
                                                         if(isset($_SESSION["userid"])){
                                                         ?>
                                                         <form name="ripple_form" method="post" action="woman_insert_ripple.php">
                                                             <input type="hidden" name="num" value="<?=$cont_num?>">
-                                                            <div class="ripple_textarea">
+                                                            <div class="ripple-textarea">
                                                                 <textarea row="3" cols="50" name="ripple_content" required></textarea>
                                                             </div>
-                                                            <div class="ripple_button"><input type="submit" value="댓글 작성"></div>
+                                                            <div class="ripple-submit-btn"><input type="submit" value="댓글 작성"></div>
                                                         </form>
                                                         <?php
                                                         }

@@ -7,17 +7,18 @@ error_reporting(E_ALL ^ E_NOTICE);
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<title> :: VIVID :: NOTICE / 공지사항</title>
+
+		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
 		<link rel="stylesheet" href="../css/common.css"/>
+		<link rel="stylesheet" href="../css/grid.css"/>
 		<link rel="stylesheet" href="../css/freeboard.css"/>
-		<link rel="stylesheet" href="../css/grid1.css"/>
+		
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!--GNB-->
 		<script src="../js/mob_menu.js"></script>
-		<title> :: VIVID :: NOTICE / 공지사항</title>
-		<style>
-			
-		</style>
 	</head>
 	<?php
 		require_once("../MYDB.php");
@@ -27,7 +28,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 	    	$mode=$_REQUEST["mode"];
 	  	else 
 	    	$mode="";
-	    if(isset($_REQUEST["search"]))   // search 쿼리스트링 값 할당 체크
+	    if(isset($_REQUEST["search"]))
     		$search=$_REQUEST["search"];
   		else 
     		$search="";
@@ -58,16 +59,14 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 
 	<body>
-		<div class="wrap"><!--추후 height수정-->
-			<!-- php로 header 부분 include -->
+		<div class="visual-content-wrap">
 			<?php include '../header.php'?>
 			<section>
-				<div id="content">
+				<div class="visual-content">
 					<div class="row" id="col2">
-      					<div class="grid12" id="title">
-      							<h1>NOTICE</h1>
+      					<div class="grid12 head-title">
+      						<h1>NOTICE</h1>
       					</div>
-      					<!--검색기능-->
       					<div class="grid12 search">
 	      					<form name="board_form" method="post" action="freeboard.php?mode=search">
 	      						<div id="list_search">
@@ -79,46 +78,45 @@ error_reporting(E_ALL ^ E_NOTICE);
 								           <option value='content'>내용</option>
 								           <option value='name'>이름</option>
 	        							</select>
-	        						</div> <!-- end of list_search3 -->
+	        						</div>
 		        					<div id="list_search4">
 		        						<input type="text" name="search">
 		        					</div>
 		        					<div id="list_search5">
 		        						<input type="submit" value="검색">
 		        					</div>
-	      						</div> <!-- end of list_search -->
+	      						</div>
 	      					</form>
       					</div>
       					<div class="grid12">
-      						<div class="list_name row">
+      						<div class="visual-list-title row">
       							<div class="grid8">
       								<div class="row">
       									<div class="grid1">
-		      								<div class="list_num">번호</div>
+		      								<div class="table-list-number">번호</div>
 		      							</div>
 		      							<div class="grid11">
-		      								<div class="list_sub">제목</div>
+		      								<div class="table-list-subtitle">제목</div>
 		      							</div>
 	      							</div>
       							</div>
       							<div class="grid4">
       								<div class="row">
       									<div class="grid4">
-      										<div id="list_name">작성자</div>
+      										<div class="table-list-name">작성자</div>
       									</div>
       									<div class="grid4">
-      										<div class="list_date">등록일</div>
+      										<div class="table-list-date">등록일</div>
       									</div>
       									<div class="grid4">
-      										<div class="list_hit">조회수</div>
+      										<div class="table-list-hit">조회수</div>
       									</div>
 	      							</div>
       							</div>
       						</div>
       					</div>
-    					<div class="grid12 list_content">
-							<?php  // 글 목록 출력
-						 
+    					<div class="grid12 table-list-content">
+							<?php 
 							while($row = $stmh->fetch(PDO::FETCH_ASSOC)) {
 							    $item_num=$row["num"];
 							    $item_id=$row["id"];
@@ -128,14 +126,14 @@ error_reporting(E_ALL ^ E_NOTICE);
 							    $item_date=substr($item_date, 0, 10);
 							    $item_subject=str_replace(" ", "&nbsp;", $row["subject"]);
 						  	?>
-  							<div class="list_item row">
+  							<div class="table-list-item row">
       							<div class="grid8">
       								<div class="row">
       									<div class="grid1">
-		      								<div class="list_item1"><?= $item_num ?></div>
+		      								<div class="list-item-number"><?= $item_num ?></div>
 		      							</div>
 		      							<div class="grid11">
-		      								<div class="list_item2">
+		      								<div class="list-item-contents">
 							    				<a href="notice_view.php?num=<?=$item_num?>"><?= $item_subject ?></a>
 							    			</div>
 		      							</div>
@@ -144,13 +142,13 @@ error_reporting(E_ALL ^ E_NOTICE);
       							<div class="grid4">
       								<div class="row">
       									<div class="grid4">
-      										<div class="list_item3"><?= $item_name ?></div>
+      										<div class="list-item-writer"><?= $item_name ?></div>
       									</div>
       									<div class="grid4">
-      										<div class="list_item4"><?= $item_date ?></div>
+      										<div class="list-item-date"><?= $item_date ?></div>
       									</div>
       									<div class="grid4">
-      										<div class="list_item5"><?= $item_hit ?></div>
+      										<div class="list-item-hit"><?= $item_hit ?></div>
       									</div>
 	      							</div>
       							</div>

@@ -6,26 +6,28 @@ session_start();
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="google-signin-client_id" content="883555849817-vouhj5t96qrvshob3bb5cgj48ib5gfcg.apps.googleusercontent.com"/>
+
+		<title> :: VIVID :: LOGIN</title>
+
 		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
+		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/common.css"/>
-		<link rel="stylesheet" href="../css/grid1.css"/>
+		<link rel="stylesheet" href="../css/grid.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<script src="../js/login.js"></script>
 		<script src="../js/mob_menu.js"></script>
 
-		<title> :: VIVID :: LOGIN</title>
-		
-  		<meta name="google-signin-client_id" content="883555849817-vouhj5t96qrvshob3bb5cgj48ib5gfcg.apps.googleusercontent.com"/>
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
 	</head>
 	<body>
-		<div class="wrap"><!--추후 height수정-->
-			<!-- php로 header 부분 include -->
+		<div class="visual-content-wrap">
 			<?php include "../header.php"?>
 			<section>
 				<h1 class="blind">&nbsp;</h1>
-				<div id="content">
+				<div class="visual-content">
 					<div class="login">
 						<form name="login_form" method="post" action="login_result.php" >
 							<div id="id">
